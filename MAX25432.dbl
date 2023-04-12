@@ -18217,7 +18217,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </drawing>
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mm" altunit="mm"/>
@@ -20587,9 +20587,9 @@ grid 3.5 mm, diameter 8 mm</description>
 <wire x1="68.45" y1="25.902" x2="68.45" y2="26.55" width="0.1524" layer="1"/>
 <wire x1="68.45" y1="26.55" x2="68.56" y2="26.66" width="0.1524" layer="1"/>
 <wire x1="68.56" y1="26.66" x2="69.04" y2="26.66" width="0.1524" layer="1"/>
-<wire x1="69.46" y1="26.24" x2="69.46" y2="26.14" width="0.1524" layer="1"/>
-<wire x1="69.46" y1="26.14" x2="70.4617375" y2="25.1382625" width="0.1524" layer="1"/>
-<wire x1="70.4617375" y1="25.1382625" x2="71.2617375" y2="25.1382625" width="0.1524" layer="1"/>
+<wire x1="69.46" y1="26.24" x2="69.46" y2="25.96" width="0.1524" layer="1"/>
+<wire x1="69.46" y1="25.96" x2="70.2817375" y2="25.1382625" width="0.1524" layer="1"/>
+<wire x1="70.2817375" y1="25.1382625" x2="71.2617375" y2="25.1382625" width="0.1524" layer="1"/>
 <via x="71.2617375" y="25.1382625" extent="1-16" drill="0.3"/>
 <wire x1="71.2617375" y1="25.1382625" x2="72" y2="25.876525" width="0.508" layer="16"/>
 <wire x1="72" y1="27.48" x2="73.52" y2="29" width="0.508" layer="16"/>
@@ -20660,12 +20660,13 @@ grid 3.5 mm, diameter 8 mm</description>
 <via x="79.6" y="13.34" extent="1-16" drill="0.3"/>
 <wire x1="79.6" y1="13.34" x2="79.02" y2="13.92" width="0.254" layer="16"/>
 <wire x1="79.02" y1="13.92" x2="77.65881875" y2="13.92" width="0.254" layer="16"/>
-<via x="70.74" y="26.72" extent="1-16" drill="0.3"/>
-<wire x1="70.74" y1="26.72" x2="70.21" y2="27.25" width="0.254" layer="1"/>
-<wire x1="70.21" y1="27.25" x2="69.798" y2="27.25" width="0.254" layer="1"/>
+<via x="70.74" y="26.6" extent="1-16" drill="0.3"/>
+<wire x1="70.74" y1="26.6" x2="70.74" y2="26.8" width="0.254" layer="1"/>
+<wire x1="70.74" y1="26.8" x2="70.29" y2="27.25" width="0.254" layer="1"/>
+<wire x1="70.29" y1="27.25" x2="69.798" y2="27.25" width="0.254" layer="1"/>
 <wire x1="77.65881875" y1="13.92" x2="70.08" y2="21.49881875" width="0.254" layer="16"/>
 <wire x1="70.74" y1="25.94" x2="70.08" y2="25.28" width="0.254" layer="16"/>
-<wire x1="70.74" y1="25.94" x2="70.74" y2="26.72" width="0.254" layer="16"/>
+<wire x1="70.74" y1="25.94" x2="70.74" y2="26.6" width="0.254" layer="16"/>
 <wire x1="70.08" y1="25.28" x2="70.08" y2="21.49881875" width="0.254" layer="16"/>
 <wire x1="79.95" y1="12.9" x2="80.75" y2="12.1" width="1.27" layer="1"/>
 <wire x1="80.75" y1="12.1" x2="83.122" y2="12.1" width="1.27" layer="1"/>
@@ -20676,6 +20677,9 @@ grid 3.5 mm, diameter 8 mm</description>
 <wire x1="82.182" y1="11.16" x2="73.118" y2="11.16" width="1.27" layer="16"/>
 <wire x1="72.778" y1="11.5" x2="68.178" y2="6.9" width="1.27" layer="1"/>
 <wire x1="68.178" y1="6.9" x2="68.178" y2="4.4" width="1.27" layer="1"/>
+<wire x1="80.15" y1="15" x2="80.02" y2="15" width="0.254" layer="16"/>
+<via x="80.02" y="15" extent="1-16" drill="0.3"/>
+<wire x1="80.02" y1="15" x2="79.95" y2="15" width="0.254" layer="1"/>
 </signal>
 <signal name="USB1_VBUS">
 <contactref element="R318" pad="2"/>
@@ -20690,11 +20694,10 @@ grid 3.5 mm, diameter 8 mm</description>
 <wire x1="78.36" y1="13.32" x2="77.72" y2="13.32" width="0.254" layer="16"/>
 <wire x1="77.72" y1="13.32" x2="69.68" y2="21.36" width="0.254" layer="16"/>
 <wire x1="69.68" y1="25.68" x2="69.68" y2="21.36" width="0.254" layer="16"/>
-<wire x1="69.68" y1="25.68" x2="70.18" y2="26.18" width="0.254" layer="16"/>
-<via x="70.18" y="26.18" extent="1-16" drill="0.3"/>
-<wire x1="70.18" y1="26.18" x2="70.18" y2="26.708" width="0.254" layer="1"/>
-<wire x1="70.18" y1="26.708" x2="70.138" y2="26.75" width="0.254" layer="1"/>
-<wire x1="70.138" y1="26.75" x2="69.798" y2="26.75" width="0.254" layer="1"/>
+<wire x1="69.68" y1="25.68" x2="70.1" y2="26.1" width="0.254" layer="16"/>
+<via x="70.1" y="26.1" extent="1-16" drill="0.3"/>
+<wire x1="70.1" y1="26.1" x2="70.1" y2="26.75" width="0.254" layer="1"/>
+<wire x1="70.1" y1="26.75" x2="69.798" y2="26.75" width="0.254" layer="1"/>
 <wire x1="80.65" y1="8.3" x2="75.35" y2="8.3" width="1.016" layer="16"/>
 <wire x1="80.5" y1="6.6" x2="80.5" y2="7.74" width="0.8128" layer="1"/>
 <wire x1="80.5" y1="7.74" x2="80.12" y2="8.12" width="0.8128" layer="1"/>
@@ -21044,6 +21047,19 @@ grid 3.5 mm, diameter 8 mm</description>
 <contactref element="Q301" pad="4"/>
 <contactref element="R305" pad="1"/>
 <contactref element="R303" pad="2"/>
+<wire x1="74.85" y1="40" x2="74.85" y2="40.05" width="0.254" layer="1"/>
+<wire x1="74.5" y1="40.4" x2="74.5" y2="41.6" width="0.254" layer="1"/>
+<via x="74.5" y="41.6" extent="1-16" drill="0.3"/>
+<wire x1="74.5" y1="41.6" x2="75.12" y2="42.22" width="0.254" layer="16"/>
+<wire x1="79.32" y1="42.22" x2="75.12" y2="42.22" width="0.254" layer="16"/>
+<wire x1="82.76" y1="42.06" x2="83" y2="41.82" width="0.254" layer="16"/>
+<via x="83" y="41.82" extent="1-16" drill="0.3"/>
+<wire x1="83" y1="41.82" x2="83" y2="40.85" width="0.254" layer="1"/>
+<wire x1="74.85" y1="40.05" x2="74.5" y2="40.4" width="0.254" layer="1"/>
+<wire x1="79.32" y1="42.22" x2="79.48" y2="42.06" width="0.254" layer="16"/>
+<wire x1="79.48" y1="42.06" x2="82.76" y2="42.06" width="0.254" layer="16"/>
+<wire x1="83" y1="40.85" x2="82.875" y2="40.975" width="0.254" layer="1"/>
+<wire x1="82.875" y1="40.975" x2="80.5" y2="40.975" width="0.254" layer="1"/>
 </signal>
 <signal name="USB1_DL2_R">
 <contactref element="Q303" pad="4"/>
@@ -21070,9 +21086,6 @@ grid 3.5 mm, diameter 8 mm</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
-<errors>
-<approved hash="23,1,532e6ddc6d68539a"/>
-</errors>
 </board>
 </drawing>
 </drawings>
