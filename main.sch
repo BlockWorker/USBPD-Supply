@@ -2864,8 +2864,7 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/61143G.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LD39150PU*" urn="urn:adsk.eagle:component:39954687/2" prefix="U" library_version="41">
-<description>DFN6 LDO regulator, 1.5A, fixed voltage</description>
+<deviceset name="DFN6-LDO" urn="urn:adsk.eagle:component:39954687/4" prefix="U" uservalue="yes" library_version="45">
 <gates>
 <gate name="A" symbol="VREG-EN" x="0" y="0"/>
 </gates>
@@ -2881,7 +2880,7 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/61143G.pdf</description>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:39954685/2"/>
 </package3dinstances>
 <technologies>
-<technology name="33"/>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -28770,8 +28769,8 @@ drill 1.3 mm</description>
 <part name="J301" library="BW-Connectors" library_urn="urn:adsk.eagle:library:33858393" deviceset="12401948E412A" device="" package3d_urn="urn:adsk.eagle:package:39897749/2"/>
 <part name="C313" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF"/>
 <part name="C314" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF"/>
-<part name="D301" library="BW-Active" library_urn="urn:adsk.eagle:library:33783073" deviceset="SOD323-SCHOTTKY" device="" package3d_urn="urn:adsk.eagle:package:33783196/2" value="NSR0530H"/>
-<part name="D302" library="BW-Active" library_urn="urn:adsk.eagle:library:33783073" deviceset="SOD323-SCHOTTKY" device="" package3d_urn="urn:adsk.eagle:package:33783196/2" value="NSR0530H"/>
+<part name="D301" library="BW-Active" library_urn="urn:adsk.eagle:library:33783073" deviceset="SOD323-SCHOTTKY" device="" package3d_urn="urn:adsk.eagle:package:33783196/2" value="SS0840WS"/>
+<part name="D302" library="BW-Active" library_urn="urn:adsk.eagle:library:33783073" deviceset="SOD323-SCHOTTKY" device="" package3d_urn="urn:adsk.eagle:package:33783196/2" value="SS0840WS"/>
 <part name="C308" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF"/>
 <part name="C305" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1µF"/>
 <part name="C317" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="470nF"/>
@@ -28811,7 +28810,7 @@ drill 1.3 mm</description>
 <part name="C513" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22µF"/>
 <part name="C514" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22µF"/>
 <part name="L501" library="BW-PassiveMechanical" library_urn="urn:adsk.eagle:library:33858467" deviceset="RLB0912" device="" package3d_urn="urn:adsk.eagle:package:33858528/2" value="10µH"/>
-<part name="U503" library="BW-Active" library_urn="urn:adsk.eagle:library:33783073" deviceset="LD39150PU*" device="" package3d_urn="urn:adsk.eagle:package:39954685/2" technology="33" value="LD39150DT33"/>
+<part name="U503" library="BW-Active" library_urn="urn:adsk.eagle:library:33783073" deviceset="DFN6-LDO" device="" package3d_urn="urn:adsk.eagle:package:39954685/2" value="LD39150DT33"/>
 <part name="C517" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="2.2µF"/>
 <part name="C518" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="D" package3d_urn="urn:adsk.eagle:package:23424/2" value="330µF"/>
 <part name="R507" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="0Ω"/>
@@ -28870,8 +28869,8 @@ drill 1.3 mm</description>
 <part name="J401" library="BW-Connectors" library_urn="urn:adsk.eagle:library:33858393" deviceset="12401948E412A" device="" package3d_urn="urn:adsk.eagle:package:39897749/2"/>
 <part name="C413" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF"/>
 <part name="C414" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF"/>
-<part name="D401" library="BW-Active" library_urn="urn:adsk.eagle:library:33783073" deviceset="SOD323-SCHOTTKY" device="" package3d_urn="urn:adsk.eagle:package:33783196/2" value="NSR0530H"/>
-<part name="D402" library="BW-Active" library_urn="urn:adsk.eagle:library:33783073" deviceset="SOD323-SCHOTTKY" device="" package3d_urn="urn:adsk.eagle:package:33783196/2" value="NSR0530H"/>
+<part name="D401" library="BW-Active" library_urn="urn:adsk.eagle:library:33783073" deviceset="SOD323-SCHOTTKY" device="" package3d_urn="urn:adsk.eagle:package:33783196/2" value="SS0840WS"/>
+<part name="D402" library="BW-Active" library_urn="urn:adsk.eagle:library:33783073" deviceset="SOD323-SCHOTTKY" device="" package3d_urn="urn:adsk.eagle:package:33783196/2" value="SS0840WS"/>
 <part name="C408" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF"/>
 <part name="C405" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1µF"/>
 <part name="C417" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="470nF"/>
