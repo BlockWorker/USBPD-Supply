@@ -67,5 +67,11 @@ void INTERRUPT_Initialize (void)
     //    SICI: SI2C2 - I2C2 Slave Events
     //    Priority: 1
         IPC12bits.SI2C2IP = 1;
+    //    TI: T2 - Timer2
+    //    Priority: 1
+        IPC1bits.T2IP = 1;
+    //    TNI: T3 - Timer3
+    //    Priority: 1
+        IPC2bits.T3IP = 1;
 
 }

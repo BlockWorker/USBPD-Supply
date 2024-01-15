@@ -46,19 +46,56 @@
   Section: Included Files
 */
 #include "mcc_generated_files/system.h"
+#include "oled.h"
+#include "util.h"
+#include "ui.h"
+#include "ap33772.h"
+
+
+#define SCREEN_UPDATE_PERIOD 100000
+
+
+static uint64_t last_screen_update = 0;
+
+
+static void _halt_error() {
+    #ifdef __DEBUG    
+        __builtin_software_breakpoint();
+    #endif
+    while(1);
+}
+
 
 /*
                          Main application
  */
-int main(void)
-{
+int main(void) {
     // initialize the device
     SYSTEM_Initialize();
-    SH_Initialize();
 
-    while (1)
-    {
-        // Add your application code
+    AP_Initialize();
+    UI_Initialize();
+    
+    bool init_success = false;
+    uint8_t i;
+    for (i = 0; i < 10; i++) {
+        if (OLED_Initialize()) {
+            init_success = true;
+            break;
+        }
+    }
+    if (!init_success) _halt_error();
+
+    while (1) {
+        UTIL_UpdateCurrentTime();
+        
+        AP_Tasks();
+        UI_Tasks();
+        
+        if (util_currentTimeMicroseconds - last_screen_update >= SCREEN_UPDATE_PERIOD) {
+            last_screen_update = util_currentTimeMicroseconds;
+            OLED_UpdateScreen();
+        }
     }
 
     return 1;

@@ -98,10 +98,11 @@
 #include "clock.h"
 #include "system.h"
 #include "i2c2.h"
-#include "i2c1.h"
+#include "delay.h"
 #include "interrupt_manager.h"
 #include "traps.h"
-#include "delay.h"
+#include "tmr2.h"
+#include "i2c1.h"
 
 void SYSTEM_Initialize(void)
 {
@@ -110,6 +111,7 @@ void SYSTEM_Initialize(void)
     INTERRUPT_Initialize();
     I2C1_Initialize();
     I2C2_Initialize();
+    TMR2_Initialize();
 }
 
 /**

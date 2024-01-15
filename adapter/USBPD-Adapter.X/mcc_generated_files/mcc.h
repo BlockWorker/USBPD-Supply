@@ -52,10 +52,11 @@
 #include <stdbool.h>
 
 #include "i2c2.h"
-#include "i2c1.h"
+#include "delay.h"
 #include "interrupt_manager.h"
 #include "traps.h"
-#include "delay.h"
+#include "tmr2.h"
+#include "i2c1.h"
 
 #warning "This file will be removed in future MCC releases. Use system.h instead."
 

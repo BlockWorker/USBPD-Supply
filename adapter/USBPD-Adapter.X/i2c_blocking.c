@@ -4,6 +4,24 @@
 #define _I2CB_RETRY_MAX       10  // define the retry count
 #define _I2CB_DEVICE_TIMEOUT  50   // define slave timeout
 
+
+const I2CB_INSTANCE I2CB_I2C1 = {
+    &I2C1_MasterWrite,
+    &I2C1_MasterRead,
+    &I2C1_MasterTRBInsert,
+    &I2C1_MasterReadTRBBuild,
+    &I2C1_MasterWriteTRBBuild
+};
+
+const I2CB_INSTANCE I2CB_I2C2 = {
+    &I2C2_MasterWrite,
+    &I2C2_MasterRead,
+    &I2C2_MasterTRBInsert,
+    &I2C2_MasterReadTRBBuild,
+    &I2C2_MasterWriteTRBBuild
+};
+
+
 bool I2CB_Write(I2CB_INSTANCE instance, uint16_t address, uint8_t* data, uint8_t length) {
     I2CB_MESSAGE_STATUS status = I2C1_MESSAGE_PENDING;
     uint16_t retryTimeOut, slaveTimeOut;
@@ -38,8 +56,16 @@ bool I2CB_Write16(I2CB_INSTANCE instance, uint16_t address, uint16_t data) {
     return I2CB_Write(instance, address, (uint8_t*)&data, 2);
 }
 
+bool I2CB_Write24(I2CB_INSTANCE instance, uint16_t address, uint32_t data) {
+    return I2CB_Write(instance, address, (uint8_t*)&data, 3);
+}
+
 bool I2CB_Write32(I2CB_INSTANCE instance, uint16_t address, uint32_t data) {
     return I2CB_Write(instance, address, (uint8_t*)&data, 4);
+}
+
+bool I2CB_Write40(I2CB_INSTANCE instance, uint16_t address, uint64_t data) {
+    return I2CB_Write(instance, address, (uint8_t*)&data, 5);
 }
 
 
@@ -78,6 +104,12 @@ int16_t I2CB_Read8(I2CB_INSTANCE instance, uint16_t address) {
 int32_t I2CB_Read16(I2CB_INSTANCE instance, uint16_t address) {
     int32_t res = 0;
     if (!I2CB_Read(instance, address, (uint8_t*)&res, 2)) res = -1;
+    return res;
+}
+
+int32_t I2CB_Read24(I2CB_INSTANCE instance, uint16_t address) {
+    int32_t res = 0;
+    if (!I2CB_Read(instance, address, (uint8_t*)&res, 3)) res = -1;
     return res;
 }
 
@@ -126,6 +158,12 @@ int16_t I2CB_CmdRead8(I2CB_INSTANCE instance, uint16_t address, uint8_t command)
 int32_t I2CB_CmdRead16(I2CB_INSTANCE instance, uint16_t address, uint8_t command) {
     int32_t res = 0;
     if (!I2CB_CmdRead(instance, address, command, (uint8_t*)&res, 2)) res = -1;
+    return res;
+}
+
+int32_t I2CB_CmdRead24(I2CB_INSTANCE instance, uint16_t address, uint8_t command) {
+    int32_t res = 0;
+    if (!I2CB_CmdRead(instance, address, command, (uint8_t*)&res, 3)) res = -1;
     return res;
 }
 
